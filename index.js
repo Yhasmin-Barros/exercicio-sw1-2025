@@ -12,9 +12,9 @@ app.get('/', (request, response)=>{
 
     for(let i = 0 ; i<=20; i++){
         resultado.push(n1)
-        let temp = n1 + n2;
+        let seq = n1 + n2;
         n1 = n2;
-        n2 =temp;
+        n2 =seq;
     }
     response.render('home', {valores: resultado})
 })
